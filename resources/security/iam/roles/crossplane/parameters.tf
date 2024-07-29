@@ -6,7 +6,7 @@ locals {
       role_policy_arns = {
         AdministratorAccess = "arn:aws:iam::aws:policy/AdministratorAccess"
       }
-
+      assume_role_condition_test = "StringLike"
       oidc_providers = {
         ex = {
           provider_arn               = var.oidc_provider_arn

@@ -5,7 +5,7 @@ module "ack-role-for-service-accounts-eks" {
 
   role_name        = local.workspace["role_name"]
   role_policy_arns = local.workspace["role_policy_arns"]
-
+  assume_role_condition_test = local.workspace["assume_role_condition_test"]
   oidc_providers = local.workspace["oidc_providers"]
 
   tags = merge(

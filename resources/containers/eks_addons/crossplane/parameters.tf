@@ -15,7 +15,7 @@ locals {
           namespace        = "crossplane-system"
           chart            = "crossplane"
           create_namespace = true
-          repository       = "https://charts.crossplane.io/stable"
+          repository       = "https://charts.crossplane.io/stable/"
         }
       }
     }
